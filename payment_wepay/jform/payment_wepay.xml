@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="basic">
+            <field
+                    name="client_id"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_CLIENT_ID"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_CLIENT_ID_DESC"
+                    />
+            <field
+                    name="client_secret"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_CLIENT_SECRET"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_CLIENT_SECRET_DESC"
+                    />
+            <field
+                    name="access_token"
+                    type="text"
+                    size="31"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_ACCESS_TOKEN"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_ACCESS_TOKEN_DESC"/>
+            <field
+                    name="account_id"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_ACCOUNT_ID"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_ACCOUNT_ID_DESC"
+                    />
+            <field
+                    name="checkout_type"
+                    type="list"
+                    default="GOODS"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_CHECKOUT_TYPE"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_CHECKOUT_TYPE_DESC">
+
+                <option value="GOODS">GOODS</option>
+                <option value="SERVICE">SERVICE</option>
+                <option value="DONATION">DONATION</option>
+                <option value="EVENT">EVENT</option>
+                <option value="PERSONAL">PERSONAL</option>
+
+            </field>
+            <field name="failed_order_state" type="tiendaorderstate" scope="com_tienda" default="10" label="PLG_TIENDA_PAYMENT_WEPAY_FAILED_ORDER_STATE" description="SPLG_TIENDA_PAYMENT_WEPAY_FAILED_ORDER_STATE_DESC" addfieldpath="/administrator/components/com_tienda/elements" />
+				<field name="payment_received_order_state" type="tiendaorderstate" scope="com_tienda" default="17" label="PLG_TIENDA_PAYMENT_WEPAY_PAYMENT_RECEIVED_ORDER_STATE" description="PLG_TIENDA_PAYMENT_WEPAY_PAYMENT_RECEIVED_ORDER_STATE_DESC" addfieldpath="/administrator/components/com_tienda/elements" />
+                
+            <field
+                    name="payer_email_message"
+                    type="textarea"
+                    default="Thank you for your purchase!"
+                    rows="5"
+                    cols="30"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_PAYER_EMAIL_MESSAGE"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_PAYER_EMAIL_MESSAGE_DESC"
+                    />
+            <field
+                    name="payee_email_message"
+                    type="textarea"
+                    default="You sold something!"
+                    rows="5"
+                    cols="30"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_PAYEE_EMAIL_MESSAGE"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_PAYEE_EMAIL_MESSAGE_DESC"
+                    />
+            <field
+                    name="fee_payer"
+                    type="radio"
+                    default="Payer"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_FEE_PAYER"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_FEE_PAYER_DESC">
+
+                <option value="Payer">Payer</option>
+                <option value="Payee">Payee</option>
+
+            </field>
+            <field
+                    name="funding_sources"
+                    type="list"
+                    default="cc"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_FUNDING_SOURCES"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_FUNDING_SOURCES_DESC">
+
+                <option value="bank,cc">PLG_TIENDA_PAYMENT_WEPAY_FUNDING_SOURCES_BANK_CC</option>
+                <option value="cc">PLG_TIENDA_PAYMENT_WEPAY_FUNDING_SOURCES_CC</option>
+                <option value="bank">PLG_TIENDA_PAYMENT_WEPAY_FUNDING_SOURCES_BANK</option>
+
+            </field>
+            <field type="spacer" />
+            <field
+                    name="test_environment"
+                    type="radio"
+                    default="0"
+                    label="PLG_TIENDA_PAYMENT_WEPAY_USE_TEST_ENVIRONMENT"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_USE_TEST_ENVIRONMENT_DESC">
+
+                <option value="0">COM_TIENDA_NO</option>
+                <option value="1">COM_TIENDA_YES</option>
+
+            </field>
+            <field
+                    name="stage_client_id"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_STAGE_CLIENT_ID"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_STAGE_CLIENT_ID_DESC"
+                    />
+            <field
+                    name="stage_client_secret"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_STAGE_CLIENT_SECRET"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_STAGE_CLIENT_SECRET_DESC"
+                    />
+            <field
+                    name="stage_access_token"
+                    type="text"
+                    size="31"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_STAGE_ACCESS_TOKEN"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_STAGE_ACCESS_TOKEN_DESC"
+                    />
+            <field
+                    name="stage_account_id"
+                    type="text"
+                    size="21"
+                    default=""
+                    label="PLG_TIENDA_PAYMENT_WEPAY_STAGE_ACCOUNT_ID"
+                    description="PLG_TIENDA_PAYMENT_WEPAY_STAGE_ACCOUNT_ID_DESC"
+                    />
+        </fieldset>
+    </fields>
+</form>
